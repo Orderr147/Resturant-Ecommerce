@@ -1576,7 +1576,7 @@ html[dir=rtl] .accordion-button::after {
 margin-bottom: 150px;
 
 }
-.checkout .next{
+.next{
  width: 180px;
 height: 46px;
 
@@ -1590,15 +1590,21 @@ line-height: 21px;
 color: #FFFFFF;
 margin-top: 36px;
 text-align: end;
-
+transition: 0.3s;
+border: none;
   }
-  html[dir=ltr] .checkout .next{
+  .next:hover{
+    color: #EA4C1A;
+    background-color: #FFFFFF;
+    border: 1px solid #EA4C1A;
+  }
+  html[dir=ltr] .next{
     margin-left: auto;
   }
-  html[dir=rtl] .checkout .next{
+  html[dir=rtl] .next{
     margin-right: auto;
   }
-  .checkout .next.notavtive{
+   .next.notavtive{
     background: #A7A7A7;
   }
 .checkout .items_checkout{
@@ -1794,11 +1800,13 @@ gap: 8px;
 padding: 14px;
   border: 1px solid #EA4C1A;
   max-width: 174px;
+  position: relative;
 }
 .addressSave .my_address input {
-  width: 37px;
+  max-width: 18px;
   height: 16px;
   border-radius: 0;
+  width: 100%;
 }
 .addressSave .my_address p{
   font-size: 14px;
@@ -1899,6 +1907,7 @@ font-family: "DM Sans3";
 /*Payment*/
 .payment{
 padding: 22px 12px;
+
 }
 .payment .payment_info{
 
@@ -2011,7 +2020,7 @@ margin-bottom: 10px;
   flex: auto;
   width: 60%;
 }
-.checkout .next {
+ .next {
   width: 110px;
   height: 35px;
  
@@ -2024,3 +2033,279 @@ margin-bottom: 10px;
 }
 }
 /*===========================================================end checkout=====================================*/
+
+
+/*=========================================================== Account=====================================*/
+.account{
+  background: #FFFFFF;
+border-radius: 10px;
+padding: 30px 34px 34px;
+min-height: 400px;
+display: flex;
+gap: 36px;
+}
+.account .personalDetails{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  height: 100%;
+  justify-content: space-between;
+}
+.account .acount_content{
+
+}
+.account .linksAccount{
+  background: #F5F5F5;
+border-radius: 10px;
+padding: 16px 0px 26px 26px;
+max-width: 300px;
+width: 100%;
+}
+html[dir=rtl] .account .linksAccount{
+  padding: 16px 26px 26px 0px;
+}
+.account .linksAccount ul{
+padding: 0;
+display: flex;
+flex-direction: column;
+gap: 14px;
+}
+.account .linksAccount ul li{
+
+}
+.account .linksAccount ul li a{
+display: flex;
+align-items: center;
+gap: 10px;
+height: 50px;
+padding: 12px;
+}
+.account .linksAccount ul li a.active{
+  background: rgba(234, 76, 26, 0.7);
+  border-radius: 10px 0px 0px 10px;
+}
+.account .linksAccount ul li a img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+.account .linksAccount ul li a p{
+  font-size: 20px;
+  line-height: 26px;
+  color: #4E4E4E;
+}
+.account .linksAccount ul li a.active p{
+color: white;
+}
+.Profile{
+  flex: 1;
+}
+/*orders*/
+
+.account .orders .titleOrder {
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 14px;
+}
+.account .orders .btnsOrder{
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 14px;
+}
+.account .orders .btnsOrder button{
+  font-size: 16px;
+line-height: 21px;
+color: #5C5959;
+}
+.account .orders .btnsOrder button.active{
+  text-decoration-line: underline;
+  color: #EA4C1A;
+  
+}
+.account .orders .allorders{
+  
+}
+.account .orders .allorders .order{
+  border: 1px solid #F1EDED;
+  padding: 12px 16px;
+}
+.account .orders .allorders .order .table>:not(:last-child)>:last-child>* {
+  border-bottom-color: currentColor;
+  border-bottom-color: #F1EDED;
+}
+.account .orders .allorders .order table{
+
+}
+.account .orders .allorders .order table thead{
+
+}
+.account .orders .allorders .order table thead th{
+
+}
+.account .orders .allorders .order table td{
+border: none;
+}
+.account .orders{
+  flex: 1;
+
+}
+.account .emptyorder{
+  margin: auto;
+  text-align: center;
+}
+.account .emptyorder a{
+  width: 180px;
+  height: 46px;
+  font-size: 16px;
+  margin: 50px auto 0px ;
+}
+.account .emptyorder img{
+margin-bottom: 16px;
+max-width: 80%;
+height: auto;
+}
+.account .emptyorder h2{
+  font-size: 16px;
+line-height: 21px;
+color: #545454;
+margin-bottom: 10px;
+font-family: "DM Sans2";
+}
+.account .emptyorder h3{
+  font-size: 14px;
+line-height: 18px;
+max-width: 280px;
+color: #545454;
+margin: auto;
+}
+/*end orders*/
+/*fav*/
+.fav{
+
+}
+.fav h2 {
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 64px;
+}
+.fav{
+  
+}
+/* end fav*/
+
+/*  address*/
+.address{
+  flex: 1;
+  height: 100%;
+}
+.address .personalDetails {
+  margin-top: 20px;
+}
+.address .checkout_steps{
+  justify-content: flex-start;
+}
+.address.addressSave{
+  padding: 0;
+}
+.address .titleaddress{
+  font-size: 16px;
+  line-height: 21px;
+  font-family: "DM Sans2";
+  margin-bottom: 18px;
+}
+.addressSave .my_address .delet_edit{
+  position: absolute;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 50;
+}
+html[dir=rtl] .addressSave .my_address .delet_edit{
+left: 8px ;
+}
+html[dir=ltr] .addressSave .my_address .delet_edit{
+  right:  8px ;
+  }
+.addressSave .my_address .delet_edit button{
+border: none;
+background-color: transparent;
+}
+/* end address*/
+/*changePass*/
+.changePass {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.changePass .part{
+  
+}
+.changePass .part h2{
+  font-size: 16px;
+line-height: 21px;
+margin-bottom: 16px;
+}
+.changePass .part form{
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  gap: 12px;
+}
+.changePass .part form input{
+width: 100%;
+}
+.changePass button{
+  width: 180px;
+height: 46px;
+align-self: flex-end;
+border: none;
+font-size: 16px;
+line-height: 21px;
+}
+/*end changePass*/
+@media(max-width:992px){
+  .account{
+  flex-direction: column;
+  }
+  .changePass .part {
+    width: 100%;
+}
+.changePass .part form {
+  
+  width: 100%;
+
+}
+.changePass button {
+ 
+  margin: auto;
+}
+}
+@media(max-width:600px){
+  .account .linksAccount {
+   
+    max-width: 230px;
+    width: 100%;
+}
+.account .linksAccount ul li a p {
+  font-size: 16px;
+  
+}
+.account .linksAccount ul li a img {
+  width: 18px;
+  height: 18px;
+  
+}
+.account .linksAccount ul li a {
+
+ 
+  height: 40px;
+  
+}
+
+}
+/*===========================================================end Account=====================================*/

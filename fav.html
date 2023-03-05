@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resturant-Ecommerce</title>
+
+    <meta name="description" content="Resturant-Ecommerce" />
+    <meta name="keywords" content="Resturant-Ecommerce" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Logo</a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <div class="end_nav">
+            <a href="">
+              <img src="./images/shop.png" alt="shop" />
+            </a>
+            <button class="btn_page2" type="button">English</button>
+            <a href="" class="btn_page">Log In</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="account container">
+      <div class="linksAccount">
+        <ul>
+          <li>
+            <a href="profile.html" >
+              <img src="./images/myProfile.webp" alt="myProfile" />
+              <p>My Profile</p>
+            </a>
+          </li>
+          <li>
+            <a href="orders.html" >
+              <img src="./images/myOrder.webp" alt="myOrder" />
+              <p>My Orders</p>
+            </a>
+          </li>
+          <li>
+            <a href="fav.html" class="active">
+              <img src="./images/favactive.webp" alt="Favorites" />
+              <p>Favorites</p>
+            </a>
+          </li>
+          <li>
+            <a href="addresses.html">
+              <img src="./images/addresses.webp" alt="Addresses" />
+              <p>Addresses</p>
+            </a>
+          </li>
+          <li>
+            <a href="changePass.html">
+              <img src="./images/changePass.webp" alt="ChangePassword" />
+              <p>Change Password</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class=" emptyorder hide">
+       <img src="./images/emptyFav.webp" alt="emptyFav">
+       <h2>No Favorites Yet</h2>
+       <h3 class="f-s">Explore our menu to add some delicious items to your cart</h3>
+      </div>
+      <div class="fav">
+        <h2 class="f-m">Favorites</h2>
+        <div class="menu">
+            <div class="item">
+              <img src="./images/meal1.webp" class="img_meal" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                alt="meal">
+              <div class="name">
+                <h2 class="f-m">Meal Name</h2>
+                <div class="love">
+                  <img src="./images/noLove.svg" alt="Love">
+                </div>
+    
+              </div>
+              <h3 class="f-s">Mighty Zinger Sandwich + Rizo + Coleslaw+ Drink</h3>
+              <div class="price_customize">
+                <div class="part1">
+                  <span class="sall">105 EGP</span>
+                  <span class="price">105 EGP</span>
+                </div>
+                <div class="part2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <p>Customize </p>
+                  <img src="./images/ArrowMeal.svg" alt="ArrowMeal">
+                </div>
+              </div>
+              <button class="add_to btn_page2">+ Add To Cart</button>
+              <div class="counter hide">
+                <button class="dec">-</button>
+                <p class="amount">1</p>
+                <button class="inc">+</button>
+              </div>
+            </div>
+     
+        </div>
+      </div>
+      
+    </section>
+
+
+
+
+    <!-- Modal -->
+  <div class="modal mealModal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+
+      </div>
+      <div class="modal-body">
+        <div class="currentMeal">
+          <img src="./images/meal1.webp" alt="meal">
+          <div class="info">
+            <h2>Meal Name</h2>
+            <p>Mighty Zinger Sandwich + Rizo + Coleslaw+ Drink</p>
+          </div>
+        </div>
+        <div class="scroll">
+          <div class="size">
+            <h3>Size</h3>
+            <div class="chooseSize">
+              <div class="form-check ">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                  value="option1">
+                <label class="form-check-label" for="inlineRadio1">Small</label>
+              </div>
+              <div class="form-check ">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                  value="option2">
+                <label class="form-check-label" for="inlineRadio2">Medium</label>
+              </div>
+              <div class="form-check ">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                  value="option3">
+                <label class="form-check-label" for="inlineRadio3">Large</label>
+              </div>
+            </div>
+          </div>
+          <div class="condiments">
+            <h3>Choose your condiments</h3>
+            <div class="items">
+              <div class="item">
+                <div class="itemInfo">
+                  <img src="./images/salad.webp" alt="salad">
+                  <label for="">Lettuce</label>
+                </div>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+              </div>
+              <div class="drop accordion-collapse collapse show" id="collapseOne" data-bs-parent="#accordionExample">
+                <div class="form-check ">
+                  <input class="form-check-input" type="radio" name="LettuceRadioOptions" id="LettuceRadio1"
+                    value="option8">
+                  <label class="form-check-label" for="LettuceRadio1">Regular</label>
+                </div>
+                <div class="form-check ">
+                  <input class="form-check-input" type="radio" name="LettuceRadioOptions" id="LettuceRadio2"
+                    value="option9">
+                  <label class="form-check-label" for="LettuceRadio2">Extra</label>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="item">
+                <div class="itemInfo">
+                  <img src="./images/tomato.webp" alt="salad">
+                  <label for="">Tomato </label>
+                </div>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                  data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true"
+                  aria-controls="collapsetwo">
+              </div>
+              <div class="drop accordion-collapse collapse show" id="collapsetwo" data-bs-parent="#accordionExample">
+                <div class="form-check ">
+                  <input class="form-check-input" type="radio" name="tomatoRadioOptions" id="tomatoRadio1"
+                    value="option8">
+                  <label class="form-check-label" for="tomatoRadio1">Regular</label>
+                </div>
+                <div class="form-check ">
+                  <input class="form-check-input" type="radio" name="tomatoRadioOptions" id="tomatoRadio2"
+                    value="option9">
+                  <label class="form-check-label" for="tomatoRadio2">Extra</label>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="item">
+                <div class="itemInfo">
+                  <img src="./images/cheese.webp" alt="cheese">
+                  <label for="">Cheese</label>
+                </div>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                  data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="true"
+                  aria-controls="collapsethree">
+              </div>
+              <div class="drop accordion-collapse collapse show" id="collapsethree"
+                data-bs-parent="#accordionExample">
+                <div class="form-check ">
+                  <input class="form-check-input" type="radio" name="CheeseRadioOptions" id="CheeseRadio1"
+                    value="option8">
+                  <label class="form-check-label" for="CheeseRadio1">Regular</label>
+                </div>
+                <div class="form-check ">
+                  <input class="form-check-input" type="radio" name="CheeseRadioOptions" id="CheeseRadio2"
+                    value="option9">
+                  <label class="form-check-label" for="CheeseRadio2">Extra</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="drink">
+            <h3>Select Your Beverage</h3>
+            <div class="items">
+
+              <div class="item">
+                <div class="itemInfo">
+                  <img src="./images/pepsican.webp" alt="Pepsi Can">
+                  <label for="">Pepsi Can</label>
+                </div>
+                <input class="form-check-input" type="radio" name="RadioOptionscan" id="inlineRadio1" value="option1">
+              </div>
+              <span></span>
+              <div class="item">
+                <div class="itemInfo">
+                  <img src="./images/pepsican.webp" alt="Pepsi Can">
+                  <label for="">Pepsi Can</label>
+                </div>
+                <input class="form-check-input" type="radio" name="RadioOptionscan" id="inlineRadio1" value="option1">
+              </div>
+              <div class="item">
+                <div class="itemInfo">
+                  <img src="./images/pepsican.webp" alt="Diet Pepsi Can">
+                  <label for="">Diet Pepsi Can</label>
+                </div>
+                <input class="form-check-input" type="radio" name="RadioOptionscan" id="inlineRadio1" value="option2">
+              </div>
+              <div class="item">
+                <div class="itemInfo">
+                  <img src="./images/7upcan.webp" alt="7Up Can">
+                  <label for="">7Up Can</label>
+                </div>
+                <input class="form-check-input" type="radio" name="RadioOptionscan" id="inlineRadio1" value="option1">
+              </div>
+              <div class="item">
+                <div class="itemInfo">
+                  <img src="./images/mirindacan.webp" alt="Mirinda Can">
+                  <label for="">Mirinda Can</label>
+                </div>
+                <input class="form-check-input" type="radio" name="RadioOptionscan" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <!-- delet "data-bs-dismiss="modal" when add anothur page  -->
+        <a href="#" type="button" class=" btn_page" data-bs-dismiss="modal">
+          <p class="f-b">Done</p>
+          <span class="f-b">210 EGP</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
