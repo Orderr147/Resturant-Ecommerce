@@ -133,9 +133,9 @@
               </div>
               <button class="add_to btn_page2">+ Add To Cart</button>
               <div class="counter hide">
-                <button class="dec">-</button>
-                <p class="amount">1</p>
-                <button class="inc">+</button>
+                <button class="dec" name="del">-</button>
+                <p class="amount"  name="num-tv">1</p>
+                <button class="inc" name="add">+</button>
               </div>
             </div>
      
@@ -314,5 +314,29 @@
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script> 
+      var del = document.getElementsByName("del");
+      const add = document.getElementsByName("add")
+      const val =  document.getElementsByName("num-tv")
+      const counter = function(){ 
+      }
+      const addcount = []
+      for(i=0;i<=add.length-1;i++){addcount.push(i)}
+    addcount.map((addone, index)=>{
+      del[index].addEventListener("click", function () {
+        if (+val[index].innerText <= 1) {
+          val[index].innerText = "1";
+         
+        } else if(val[index].value = 1 ) {
+          val[index].innerText = +val[index].innerText - 1;
+       
+        }
+      });
+      add[index].addEventListener("click", function () {
+    val[index].innerText=+val[index].innerText+1;
+    counter()
+     })
+    });
+    </script> 
   </body>
 </html>
