@@ -243,6 +243,69 @@ html::-webkit-scrollbar-track {
   justify-content: center;
   gap: 12px;
 }
+
+
+
+.navbar .dropdown{
+
+}
+.navbar .dropdown h4{
+  font-size: 16px;
+line-height: 21px;
+color: #FFFFFF;
+background: #EA4C1A;
+border-radius: 10px;
+height: 46px;
+width: fit-content;
+padding: 12px 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0;
+}
+.navbar .dropdown ul {
+  width: 100%;
+  min-width: fit-content;
+}
+.navbar .dropdown ul li{
+  margin-bottom: 12px;
+}
+.navbar .dropdown ul li a {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  padding: 0px 8px;
+}
+.navbar .dropdown-item.active, .dropdown-item:active {
+ 
+  background-color: transparent;
+}
+.navbar .dropdown-item:focus, .dropdown-item:hover {
+  color: #1e2125;
+  background-color: transparent;
+}
+.navbar .dropdown-menu {
+ 
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+
+}
+.navbar .dropdown ul li:last-of-type a p {
+  padding: 12px 22px 0px;
+  border-top: 1px solid #D9D9D9;
+  width: 100%;
+  text-align: start;
+}
+.navbar .dropdown ul li a img{
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+.navbar .dropdown ul li a p{
+  font-size: 16px;
+line-height: 21px;
+color: #4E4E4E;
+}
 @media (min-width: 992px) {
   .navbar-expand-lg {
     flex-wrap: nowrap;
@@ -268,6 +331,12 @@ html::-webkit-scrollbar-track {
   .end_nav {
     padding: 10px 20px;
   }
+}
+@media (max-width: 350px) {
+  .navbar .dropdown-menu {
+    left: 30% !important;
+    transform: translateX(-50%) !important;
+}
 }
 /*============================end navbar======================*/
 
@@ -495,6 +564,21 @@ html[dir="rtl"] .menu .item {
   margin: 0;
 }
 .menu .item .name .love {
+  width: 16px;
+  height: 16px;
+}
+.menu .item .name .love .state {
+  background-image: url('../images/noLove.svg');
+  background-size: 16px;
+  height: 16px;
+  width: 16px;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+.menu .item .name .love.active .state{
+  background-image: url('../images/love.svg');
+  transition: 0.3s;
+
 }
 .menu .item .name .love img {
 }
