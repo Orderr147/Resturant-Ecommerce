@@ -1958,42 +1958,42 @@ line-height: 21px;
   background-color: white;
   margin: 20px auto;
 }
-.orderSuccsses .orderSummarySuccsses{
+ .orderSummarySuccsses{
 max-width: 366px;
 margin: auto;
 width: 100%;
 text-align: start;
 }
-.orderSuccsses .orderSummarySuccsses h4{
+ .orderSummarySuccsses h4{
   font-size: 16px;
   line-height: 21px;
  
 }
-.orderSuccsses .orderSummarySuccsses h4 span{
+ .orderSummarySuccsses h4 span{
   font-size: 12px;
   line-height: 16px;
   padding: 0px 4px;
 }
-.orderSuccsses .orderSummarySuccsses ul{
+ .orderSummarySuccsses ul{
   background: #FFFFFF;
   border-radius: 10px;
   padding: 14px 12px;
   margin-bottom: 12px;
   width: 100%;
 }
-.orderSuccsses .orderSummarySuccsses ul li{
+ .orderSummarySuccsses ul li{
 display: flex;
 align-items: center;
 justify-content: space-between;
 margin-bottom: 10px;
 }
-.orderSuccsses .orderSummarySuccsses ul li p{
+ .orderSummarySuccsses ul li p{
   font-size: 14px;
   line-height: 18px;
 
   color: #4E4E4E;
 }
-.orderSuccsses .orderSummarySuccsses h5{
+ .orderSummarySuccsses h5{
   font-size: 14px;
   line-height: 18px;
 }
@@ -2117,6 +2117,8 @@ color: white;
   font-size: 16px;
 line-height: 21px;
 color: #5C5959;
+background-color: transparent;
+border: none;
 }
 .account .orders .btnsOrder button.active{
   text-decoration-line: underline;
@@ -2124,28 +2126,76 @@ color: #5C5959;
   
 }
 .account .orders .allorders{
-  
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
-.account .orders .allorders .order{
+.account .orders .allorders .order {
   border: 1px solid #F1EDED;
-  padding: 12px 16px;
+  padding: 12px 16px ;
 }
 .account .orders .allorders .order .table>:not(:last-child)>:last-child>* {
   border-bottom-color: currentColor;
   border-bottom-color: #F1EDED;
 }
-.account .orders .allorders .order table{
+.account .orders .allorders .order table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
 
+  min-width: 400px;
+}
+.account .orders .allorders .order table tr th{
+  border-bottom: 1px solid #F1EDED;
+  font-size: 14px;
+line-height: 18px;
+font-family: "DM Sans3";
+font-weight: 400;
 }
 .account .orders .allorders .order table thead{
 
 }
-.account .orders .allorders .order table thead th{
-
+.account .orders .allorders .order table  td{
+padding-top: 12px;
 }
 .account .orders .allorders .order table td{
 border: none;
+font-size: 12px;
+line-height: 16px;
+font-family: "DM Sans3";
+
 }
+
+.account .orders .allorders .order .pending{
+  color: #C29801 !important;
+}
+.account .orders .allorders .order .delivered{
+  color: #157E0C !important;
+}
+.account .orders .allorders .order .btnTable{
+display: flex;
+align-items: center;
+gap: 12px;
+justify-content: end;
+margin-top: 20px;
+}
+.account .orders .allorders .order .btnTable a{
+  font-size: 14px;
+line-height: 18px;
+
+color: #EA4C1A;
+}
+.account .orders .allorders .order .btnTable span{
+  display: block;
+  width: 1px ;
+  height: 16px;
+  background-color: black;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
 .account .orders{
   flex: 1;
 
@@ -2178,6 +2228,12 @@ line-height: 18px;
 max-width: 280px;
 color: #545454;
 margin: auto;
+}
+.orders .checkout_steps{
+  margin-bottom: 54px;
+}
+.orders .orderSummarySuccsses {
+  margin: 20px 0px;
 }
 /*end orders*/
 /*fav*/
@@ -2285,6 +2341,25 @@ line-height: 21px;
   margin: auto;
 }
 }
+@media(max-width:768px){
+.orders  .checkout_steps .part {
+  
+    justify-content: flex-start;
+    width: 50%;
+}
+.orders .checkout_steps .line span {
+ 
+  height: 3px;
+ 
+}
+.orders .checkout_steps {
+ flex-direction: column;
+}
+.orders .checkout_steps .line {
+  
+ width: 60%;
+}
+}
 @media(max-width:600px){
   .account .linksAccount {
    
@@ -2306,6 +2381,13 @@ line-height: 21px;
   height: 40px;
   
 }
-
+.account .orders .btnsOrder {
+ 
+  gap: 30px;
+justify-content: space-evenly;
+}
+.account .orders .allorders .order::-webkit-scrollbar {
+  width: 100px;
+}
 }
 /*===========================================================end Account=====================================*/

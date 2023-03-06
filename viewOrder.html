@@ -103,36 +103,78 @@
         </ul>
       </div>
       <div class="orders">
-        <h2 class="titleOrder f-m"></h2>
-        <div class="btnsOrder">
-          <button class="active">All Orders</button>
-          <button>New</button>
-          <button>Delivered</button>
-        </div>
+        <div class="checkout_steps">
+          <div class="part done"><img src="./images/done.webp" alt="done"> <h4>Pending</h4></div>
+          <div class="line done"><span></span></div>
+          <div class="part done"><h3>2</h3> <h4>Preparing</h4></div>
+          <div class="line process"><span></span></div>
+          <div class="part"><h3>3</h3> <h4>Shiped</h4></div>
+          <div class="line "><span></span></div>
+          <div class="part"><h3>4</h3> <h4>Delivered</h4></div>
+      </div>
+       
         <div class="allorders">
-          <div class="order table-responsive">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Order No.</th>
-                  <th scope="col">Date</th>
-                  <th scope="col">Ship To</th>
-                  <th scope="col">Order Total</th>
-                  <th scope="col">Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1254789</td>
+          <div style="overflow-x:auto;" class="order ">
+            <table>
+              <tr>
+                <th >Order No.</th>
+                <th >Date</th>
+                <th >Ship To</th>
+                <th >Order Total</th>
+                <th >Status</th>
+              </tr>
+              <tr>
+                <td>1254789</td>
                   <td>3/3/2023</td>
                   <td>Donia El Wazery</td>
                   <td>250 EGP</td>
                   <td class="pending">Pending</td>
-                </tr>
-              </tbody>
+                 
+              </tr>
+              
+              
             </table>
+           
           </div>
         </div>
+        <div class="orderSummarySuccsses">
+          <h4 class="f-b">Order Summary <span class="f-s">( Order No. #125487 )</span></h4>
+          <ul>
+              <li>
+                  <p>Pizza Margherita</p>
+                  <p>x2</p>
+                  <p>210 EGP</p>
+              </li>
+              <li>
+                  <p>Beef Burger Sandwich</p>
+                  <p>x1</p>
+                  <p>210 EGP</p>
+              </li>
+          </ul>
+          <h5 class="f-b">Price Summary</h5>
+          <ul>
+              <li>
+                  <p>Payment type</p>
+                  <p>Cash on delivery</p>
+              </li>
+              <li>
+                  <p>Sub total</p>
+                  <p>541 EGP</p>
+              </li>
+              <li>
+                  <p>Shipping</p>
+                  <p>50 EGP</p>
+              </li>
+              <li>
+                <p>Discount</p>
+                <p class="green">-100 EGP</p>
+            </li>
+            <li style="margin-top: 16px;">
+              <p class="f-b"style="font-size: 16px;">Total</p>
+              <p class="f-b" style="font-size: 16px;">985 EGP</p>
+          </li>
+          </ul>
+         </div>
       </div>
     </section>
 

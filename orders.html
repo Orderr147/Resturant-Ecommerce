@@ -102,10 +102,74 @@
           </li>
         </ul>
       </div>
-      <div class="orders emptyorder">
+      <div class="orders emptyorder hide">
        <img src="./images/emptyOrder.webp" alt="emptyOrder">
        <h2>No Orders Yet</h2>
        <h3 class="f-s">Explore our menu to add some delicious items to your cart</h3>
+      </div>
+      <div class="orders">
+        <h2 class="titleOrder f-m">My Orders</h2>
+        <div class="btnsOrder">
+          <button class="active">All Orders</button>
+          <button>New</button>
+          <button>Delivered</button>
+        </div>
+        <div class="allorders">
+          <div style="overflow-x:auto;" class="order ">
+            <table>
+              <tr>
+                <th >Order No.</th>
+                <th >Date</th>
+                <th >Ship To</th>
+                <th >Order Total</th>
+                <th >Status</th>
+              </tr>
+              <tr>
+                <td>1254789</td>
+                  <td>3/3/2023</td>
+                  <td>Donia El Wazery</td>
+                  <td>250 EGP</td>
+                  <td class="pending">Pending</td>
+                 
+              </tr>
+              
+              
+            </table>
+            <div class="btnTable">
+              <a href="viewOrder.html">View Order</a>
+              <span></span>
+              <a href="carts.html">Reorder</a>
+
+            </div>
+          </div>
+          <div style="overflow-x:auto;" class="order ">
+            <table>
+              <tr>
+                <th >Order No.</th>
+                <th >Date</th>
+                <th >Ship To</th>
+                <th >Order Total</th>
+                <th >Status</th>
+              </tr>
+              <tr>
+                <td>1254789</td>
+                  <td>3/3/2023</td>
+                  <td>Donia El Wazery</td>
+                  <td>250 EGP</td>
+                  <td class="delivered">Delivered</td>
+                 
+              </tr>
+              
+              
+            </table>
+            <div class="btnTable">
+              <a href="viewOrder.html">View Order</a>
+              <span></span>
+              <a href="carts.html">Reorder</a>
+
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
