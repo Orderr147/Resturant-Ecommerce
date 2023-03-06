@@ -1,4 +1,4 @@
-<p align="center"><a href="https://aquadic.github.io/just-meet" target="_blank"><img src="./images/shop.png" width="400"></a></p>
+<p align="center"><a href="https://aquadic.github.io/Resturant-Ecommerce" target="_blank"><img src="./images/shop.png" width="400"></a></p>
 
 Frontend Made by [AQuadic](https://aquadic.com)
 
