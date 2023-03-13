@@ -339,8 +339,7 @@
     var del = document.getElementsByName("del");
     const add = document.getElementsByName("add")
     const val =  document.getElementsByName("num-tv")
-    const counter = function(){ 
-    }
+
     const addcount = []
     for(i=0;i<=add.length-1;i++){addcount.push(i)}
   addcount.map((addone, index)=>{
@@ -355,7 +354,7 @@
     });
     add[index].addEventListener("click", function () {
   val[index].innerText=+val[index].innerText+1;
-  counter()
+ 
    })
   });
   </script> 
